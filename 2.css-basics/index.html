@@ -8,7 +8,7 @@
     <title>Blog</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>👨🏼‍💻 HTML Introduction</h1>
       <nav>
         <a href="#">Web Developement</a>
@@ -21,7 +21,7 @@
       <header>
         <h2>What is HTML?</h2>
         <img src="imgs/author.jpg" alt="Author" height="50" width="50" />
-        <p>Posted by <strong>John Doe</strong> on Tuesday, August 18th 2029</p>
+        <p id="author">Posted by <strong>John Doe</strong> on Tuesday, August 18th 2029</p>
         <img
           src="imgs/post-img.jpeg"
           alt="Post image"
@@ -51,12 +51,12 @@
     </article>
     <aside>
       <h4>Related Posts</h4>
-      <ul>
-        <li><img src="imgs/related-html.avif" alt="Html" width="50" height="50"><a href="#">How to put contents on the Webpage</a><p>By John Doe</p></li>
-        <li><img src="imgs/related-css.png" alt="Css" width="50" height="50"><a href="#">How to style a Webpage</a><p>By Mike Smith</p></li>
-        <li><img src="imgs/related-js.png" alt="Js" width="50" height="50"><a href="#">How to make a Webpage interactive</a><p>By Alex Roy</p></li>
+      <ul class="related">
+        <li><img src="imgs/related-html.avif" alt="Html" width="50" height="50"><a href="#">How to put contents on the Webpage</a><p class="related-author">By John Doe</p></li>
+        <li><img src="imgs/related-css.png" alt="Css" width="50" height="50"><a href="#">How to style a Webpage</a><p class="related-author">By Mike Smith</p></li>
+        <li><img src="imgs/related-js.png" alt="Js" width="50" height="50"><a href="#">How to make a Webpage interactive</a><p class="related-author">By Alex Roy</p></li>
       </ul>
     </aside>
-    <footer>Copyright &copy; 2029 by Avengers</footer>
+    <footer id="footer">Copyright &copy; 2029 by Avengers</footer>
   </body>
 </html>
