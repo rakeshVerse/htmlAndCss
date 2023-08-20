@@ -16,6 +16,11 @@ body {
   border-top: 10px solid #1098ad;
 }
 
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
 .main-header {
   text-align: center;
   background-color: #f0eeee;
@@ -27,6 +32,10 @@ body {
   margin-bottom: 20px;
 }
 
+.post-img {
+  width: 100%;
+  height: auto;
+}
 article {
   margin-bottom: 25px;
 }
@@ -37,6 +46,7 @@ aside {
   border-bottom: 5px solid #1098ad;
   padding: 40px 0;
   margin-bottom: 30px;
+  width: 500px;
 }
 
 #author,
