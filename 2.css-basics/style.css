@@ -1,11 +1,18 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* Note: Universal selector applies styles to all the elements 
+While body selector applies styles which can be inherited by the child elements.*/
+
+* {
+  /* Apply to all the elements */
+  /* border-top: 5px solid #1098ad; */
+}
+
+body {
+  /* Inherit to all the child elements*/
   font-family: sans-serif;
   color: #444;
+
+  /* Won't inherit */
+  border-top: 10px solid #1098ad;
 }
 
 h1,
