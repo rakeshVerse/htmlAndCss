@@ -67,6 +67,7 @@ aside {
 }
 
 /* pseudo classes */
+
 li:first-child {
   font-weight: bold;
 }
@@ -87,4 +88,28 @@ li:nth-child(odd) {
 article p:first-child {
   /* color: red; */
 }
+
 /* ---------- */
+
+/* Styling links (Sequence of 4 states of Links: LVHA) */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: chocolate;
+  font-weight: bold;
+  text-decoration: underline dotted chocolate;
+}
+
+a:active {
+  background-color: #444;
+}
+
+/* ------------- */
