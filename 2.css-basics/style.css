@@ -14,6 +14,8 @@ body {
 
   /* Won't inherit */
   border-top: 10px solid #1098ad;
+
+  position: relative;
 }
 
 .container {
@@ -173,3 +175,28 @@ nav a:link:last-child {
 }
 
 /* --------- */
+
+/* Positioning
+
+- Absolute positioning put the element out of the normal flow. Using it we can position an element wherever we want.
+By default it is positioned as per the view port but we can positino it relative to its first parent with position 'relative'.
+*/
+.top:link {
+  border: 0;
+  background-color: red;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.top:visited {
+  color: #fff;
+}
