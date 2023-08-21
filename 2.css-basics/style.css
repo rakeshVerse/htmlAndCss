@@ -218,7 +218,7 @@ p::first-line {
 
 /* Select adjacent sibling i.e. select first line of paragraphs that immediately comes after h3s */
 h3 + p::first-line {
-  color: red;
+  /* color: red; */
 }
 
 /* After/Before pseudo elements adds an element after/before the selected element, 
