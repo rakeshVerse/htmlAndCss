@@ -157,3 +157,19 @@ a:active {
 }
 
 /* ------------- */
+
+/* Types of boxes: Block level, Inline, Inline-block.
+- Images are Inline-block elements that's why height & width works with Images.
+- Inline-block works like Block level elements but it occupies only the width of its content just like Inline elements.*/
+
+nav a:link {
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* --------- */
