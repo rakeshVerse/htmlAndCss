@@ -24,7 +24,7 @@ body {
 }
 
 .main-header {
-  text-align: center;
+  /* text-align: center; */
   background-color: #f0eeee;
   padding: 40px 20px;
   margin-bottom: 50px;
@@ -239,4 +239,19 @@ h2::after {
   top: -10px;
   right: -25px;
 }
+/* -------- */
+
+/* FLOATS */
+
+.author {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
 /* -------- */
