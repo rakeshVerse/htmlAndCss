@@ -25,10 +25,14 @@ body {
 }
 
 .main-header {
-  /* text-align: center; */
+  text-align: center;
   background-color: #f0eeee;
-  padding: 10px 20px;
+  padding: 20px 20px;
   margin-bottom: 50px;
+}
+
+.author-img {
+  border-radius: 50%;
 }
 
 .post-header {
@@ -39,6 +43,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 article {
   margin-bottom: 25px;
 }
@@ -54,7 +59,7 @@ aside {
 
 #author,
 #footer {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 ol,
@@ -86,7 +91,7 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
@@ -106,12 +111,6 @@ li {
 
 .related {
   list-style: none;
-  padding-left: 0;
-}
-
-.related-author {
-  font-size: 14px;
-  font-weight: bold;
 }
 
 /* pseudo classes */
@@ -169,8 +168,6 @@ a:active {
 
 nav a:link {
   margin-right: 20px;
-  margin-top: 23px;
-  display: inline-block;
 }
 
 nav a:link:last-child {
@@ -211,7 +208,7 @@ Pseudo elements are elements that don't exist in html but be can still select an
 
 /* Select first letter */
 h1::first-letter {
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 /* Select first line of each paragraph */
@@ -244,56 +241,52 @@ h2::after {
 }
 /* -------- */
 
-/* FLOATS */
+/* FLEXBOX */
 
-/* Author */
-.author {
-  float: left;
-  margin-left: 10px;
-  margin-top: 15px;
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.author-img {
-  float: left;
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 10px;
 }
 
-/* --- */
-
-/* Main header */
-h1 {
-  float: left;
-  width: 300px;
+.author {
+  margin-bottom: 0;
 }
 
-nav {
-  float: right;
+/* Related posts */
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-/* fix collapsing height */
-.clearfix::after {
-  content: "";
-  clear: both;
+.related-post-link:link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
   display: block;
+  margin-bottom: 5px;
 }
 
-/* ------ */
-
-/* Change Entire Page Layout */
-article {
-  width: 855px;
-  float: left;
+.related-post-author {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
 
-aside {
-  width: 300px;
-  float: right;
-  padding: 40px 30px;
+.related-post-img {
+  width: 80px;
+  height: 80px;
 }
 
-footer {
-  clear: both;
-}
-/* --- */
+/* ---- */
 
 /* -------- */
