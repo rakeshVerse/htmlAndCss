@@ -1,0 +1,299 @@
+/* Note: Universal selector applies styles to all the elements 
+While body selector applies styles which can be inherited by the child elements.*/
+
+* {
+  /* Apply to all the elements */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Inherit to all the child elements*/
+  font-family: sans-serif;
+  color: #444;
+
+  /* Won't inherit */
+  border-top: 10px solid #1098ad;
+
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  /* text-align: center; */
+  background-color: #f0eeee;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+
+.post-header {
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+article {
+  margin-bottom: 25px;
+}
+
+aside {
+  background-color: #f0eeee;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 40px 0;
+  margin-bottom: 30px;
+  width: 500px;
+}
+
+#author,
+#footer {
+  font-size: 12px;
+}
+
+ol,
+ul {
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.related {
+  list-style: none;
+  padding-left: 0;
+}
+
+.related-author {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* pseudo classes */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+li:nth-child(2) {
+  /* color: red; */
+}
+
+li:nth-child(odd) {
+  /* color: red; */
+}
+
+/* Misconception: This won't work! */
+article p:first-child {
+  /* color: red; */
+}
+
+/* ---------- */
+
+/* Styling links (Sequence of 4 states of Links: LVHA) */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: chocolate;
+  font-weight: bold;
+  text-decoration: underline dotted chocolate;
+}
+
+a:active {
+  background-color: #444;
+}
+
+/* ------------- */
+
+/* Types of boxes: Block level, Inline, Inline-block.
+- Images are Inline-block elements that's why height & width works with Images.
+- Inline-block works like Block level elements but it occupies only the width of its content just like Inline elements.*/
+
+nav a:link {
+  margin-right: 20px;
+  margin-top: 23px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* --------- */
+
+/* Positioning
+
+- Absolute positioning put the element out of the normal flow. Using it we can position an element wherever we want.
+By default it is positioned as per the view port but we can positino it relative to its first parent with position 'relative'.
+*/
+.top:link {
+  border: 0;
+  background-color: red;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.top:visited {
+  color: #fff;
+}
+
+/* ----- */
+
+/* Pseudo Elements: 
+Pseudo elements are elements that don't exist in html but be can still select and style them */
+
+/* Select first letter */
+h1::first-letter {
+  font-size: 40px;
+}
+
+/* Select first line of each paragraph */
+p::first-line {
+  /* color: red; */
+}
+
+/* Select adjacent sibling i.e. select first line of paragraphs that immediately comes after h3s */
+h3 + p::first-line {
+  /* color: red; */
+}
+
+/* After/Before pseudo elements adds an element after/before the selected element, 
+it is used to add small styles to page without creating HTML */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 15px;
+  background-color: yellow;
+  color: #444;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+/* -------- */
+
+/* FLOATS */
+
+/* Author */
+.author {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* --- */
+
+/* Main header */
+h1 {
+  float: left;
+  width: 300px;
+}
+
+nav {
+  float: right;
+}
+
+/* fix collapsing height */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* ------ */
+
+/* Change Entire Page Layout */
+article {
+  width: 855px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+  padding: 40px 30px;
+}
+
+footer {
+  clear: both;
+}
+/* --- */
+
+/* -------- */

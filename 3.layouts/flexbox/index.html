@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/fav.png" type="image/x-icon">
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header clearfix">
+        <h1>👨🏼‍💻 HTML Introduction</h1>
+        <nav>
+          <a href="#">Web Developement</a>
+          <a href="#">Java</a>
+          <a href="#">JavaScript</a>
+          <a href="flexbox.html">Flexbox</a>
+        </nav>
+      </header>
+      <article>
+        <header class="post-header">
+          <h2>What is HTML? That's, well, a very good question!</h2>
+          <img class="author-img" src="imgs/author.jpg" alt="Author" height="50" width="50" />
+          <p id="author" class="author">Posted by <strong>John Doe</strong> on <em>Tuesday, August 18th 2029</em></p>
+          <img
+            src="imgs/post-img.jpeg"
+            alt="Post image"
+            height="400"
+            width="1000"
+            class="post-img"
+          />
+          <a href="#" class="top">&UpArrow;</a>
+        </header>
+        <p>HTML stands for Hyper Text Markup Language.</p>
+        <p>HTML is the standard markup language for creating Web pages. Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page. Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+        <h3>A Simple HTML Document</h3>
+        <p> This is dummy. paragraph one. HTML source code of the page. Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS).</p>
+        <ol>
+          <li>
+            The <!DOCTYPE html> declaration defines that this document is an HTML5
+            document
+          </li>
+          <li>The <html> element is the root element of an HTML page</li>
+          <li>The <head> element contains meta information about the HTML page</li>
+        </ol>
+        <p>For more visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Docs</a>.</p>
+        <h3>What is an HTML Element?</h3>
+        <p> This is dummy. paragraph two. HTML source code of the page. Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS).</p>
+        <ul>
+          <li>An HTML element is defined by a start tag, some content, and an end tag</li>
+          <li>The HTML element is everything from the start tag to the end tag</li>
+          <li>Some HTML elements have no content. These elements are called empty elements. Empty elements do not have an end tag!</li>
+        </ul>
+        <p>And that's a wrap. Hope you learned something new. See you!</p>
+      </article>
+      <aside>
+        <h4>Related Posts</h4>
+        <ul class="related">
+          <li><img src="imgs/related-html.avif" alt="Html" width="50" height="50"><a href="#">How to put contents on the Webpage</a><p class="related-author">By John Doe</p></li>
+          <li><img src="imgs/related-css.png" alt="Css" width="50" height="50"><a href="#">How to style a Webpage</a><p class="related-author">By Mike Smith</p></li>
+          <li><img src="imgs/related-js.png" alt="Js" width="50" height="50"><a href="#">How to make a Webpage interactive</a><p class="related-author">By Alex Roy</p></li>
+        </ul>
+      </aside>
+      <footer id="footer">Copyright &copy; 2029 by Avengers</footer>
+    </div>
+  </body>
+</html>
