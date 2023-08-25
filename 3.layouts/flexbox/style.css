@@ -54,17 +54,19 @@ aside {
   border-bottom: 5px solid #1098ad;
   padding: 40px 0;
   margin-bottom: 30px;
-  width: 500px;
 }
 
-#author,
 #footer {
-  font-size: 14px;
+  background-color: #f0eeee;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 12px;
 }
 
 ol,
 ul {
-  padding-left: 40px;
+  padding: 0 20px;
   margin-bottom: 10px;
 }
 
@@ -271,7 +273,7 @@ h2::after {
 .related-post-link:link {
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   display: block;
   margin-bottom: 5px;
 }
@@ -288,5 +290,22 @@ h2::after {
 }
 
 /* ---- */
+
+/* Layout */
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+}
+
+aside {
+  flex: 0 0 300px;
+}
+
+article {
+  flex: 1;
+}
+/* ----- */
 
 /* -------- */
