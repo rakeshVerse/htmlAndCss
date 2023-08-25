@@ -42,7 +42,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 5px;
+      }
+
+      .el {
+        /* 
+        DEFAULTS:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* flex-basis: 200px; */
+        flex-shrink: 0; /* Don't shrink */
+        flex-grow: 1;
+
+        /* 
+        shorthand:
+        flex: 0 0 80px; */
       }
 
       .el--1 {
@@ -52,7 +68,7 @@
       .el--6 {
         align-self: stretch;
 
-        /* Default value if 0 for all the items */
+        /* Default value is 0 for all the items */
         order: -1;
       }
     </style>
