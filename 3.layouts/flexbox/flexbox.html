@@ -7,52 +7,66 @@
     <title>Flexbox</title>
     <style>
       .el--1 {
-        background-color: blueviolet;
+        background-color: orangered;
       }
       .el--2 {
-        background-color: orangered;
+        background-color: blueviolet;
       }
       .el--3 {
         background-color: green;
         height: 150px;
       }
       .el--4 {
-        background-color: goldenrod;
+        background-color: palevioletred;
       }
       .el--5 {
-        background-color: palevioletred;
+        background-color: goldenrod;
       }
       .el--6 {
         background-color: steelblue;
       }
       .el--7 {
-        background-color: yellow;
+        background-color: crimson;
       }
       .el--8 {
-        background-color: crimson;
+        background-color: yellow;
       }
 
       .container {
-        /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+      }
+
+      .el--6 {
+        align-self: stretch;
+
+        /* Default value if 0 for all the items */
+        order: -1;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="el el--1">HTML</div>
-      <div class="el el--2">and</div>
-      <div class="el el--3">CSS</div>
-      <div class="el el--4">are</div>
-      <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <div class="el el--1">Believe</div>
+      <div class="el el--2">in</div>
+      <div class="el el--3">yourself</div>
+      <div class="el el--4">and</div>
+      <div class="el el--5">you</div>
+      <div class="el el--6">are</div>
+      <div class="el el--7">halfway</div>
+      <div class="el el--8">there</div>
     </div>
   </body>
 </html>
