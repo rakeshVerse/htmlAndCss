@@ -14,10 +14,10 @@
       }
       .el--3 {
         background-color: blueviolet;
-        height: 150px;
       }
       .el--4 {
         background-color: yellow;
+        height: 120px;
       }
       .el--5 {
         background-color: palevioletred;
@@ -33,17 +33,21 @@
       }
 
       .container--1 {
-        /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 200px 100px 150px 100px;
+        grid-template-rows: 200px 300px;
+        /* gap: 30px;  */
+        column-gap: 30px;
+        row-gap: 70px;
       }
 
       .container--2 {
-        /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
@@ -53,19 +57,20 @@
         height: 600px;
 
         /* CSS GRID */
+        display: none;
       }
     </style>
   </head>
   <body>
     <div class="container--1">
-      <div class="el el--1">(1) HTML</div>
-      <div class="el el--2">(2) and</div>
-      <div class="el el--3">(3) CSS</div>
-      <div class="el el--4">(4) are</div>
-      <div class="el el--5">(5) amazing</div>
-      <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
-      <div class="el el--8">(8) learn</div>
+      <div class="el el--1">(1) Believe</div>
+      <div class="el el--2">(2) in</div>
+      <div class="el el--3">(3) Yourself</div>
+      <div class="el el--4">(4) and</div>
+      <div class="el el--5">(5) you</div>
+      <div class="el el--6">(6) are</div>
+      <div class="el el--7">(7) halfway</div>
+      <div class="el el--8">(8) there</div>
     </div>
 
     <div class="container--2">
