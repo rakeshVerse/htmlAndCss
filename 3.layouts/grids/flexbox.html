@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .el--1 {
+        background-color: orangered;
+      }
+      .el--2 {
+        background-color: blueviolet;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: palevioletred;
+      }
+      .el--5 {
+        background-color: goldenrod;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: crimson;
+      }
+      .el--8 {
+        background-color: yellow;
+      }
+
+      .container {
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 30px;
+        margin: 40px;
+
+        /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+
+      .el {
+        /* 
+        DEFAULTS:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* flex-basis: 200px; */
+        flex-shrink: 0; /* Don't shrink */
+        flex-grow: 1;
+
+        /* 
+        shorthand:
+        flex: 0 0 80px; */
+      }
+
+      .el--1 {
+        align-self: flex-start;
+      }
+
+      .el--6 {
+        align-self: stretch;
+
+        /* Default value is 0 for all the items */
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">Believe</div>
+      <div class="el el--2">in</div>
+      <div class="el el--3">yourself</div>
+      <div class="el el--4">and</div>
+      <div class="el el--5">you</div>
+      <div class="el el--6">are</div>
+      <div class="el el--7">halfway</div>
+      <div class="el el--8">there</div>
+    </div>
+  </body>
+</html>
