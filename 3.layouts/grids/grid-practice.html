@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Practice</title>
+    <style>
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        column-gap: 25px;
+        row-gap: 10px;
+      }
+
+      .header {
+        background-color: aqua;
+        grid-column: 1/-1;
+      }
+
+      .article {
+        background-color: chocolate;
+        height: 600px;
+      }
+
+      .aside {
+        background-color: blueviolet;
+        height: 500px;
+      }
+
+      .footer {
+        background-color: burlywood;
+        grid-column: 1/-1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h2>Header</h2></div>
+      <div class="article"><h2>Article</h2></div>
+      <div class="aside"><h2>Aside</h2></div>
+      <div class="footer"><h2>Footer</h2></div>
+    </div>
+  </body>
+</html>
