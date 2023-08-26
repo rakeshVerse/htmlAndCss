@@ -17,7 +17,7 @@
       }
       .el--4 {
         background-color: yellow;
-        height: 120px;
+        /* height: 120px; */
       }
       .el--5 {
         background-color: palevioletred;
@@ -40,11 +40,25 @@
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 200px 100px 150px 100px;
-        grid-template-rows: 200px 300px;
+
+        /* GRID COLUMN */
+        /* grid-template-columns: 200px 100px 200px 100px; */
+        /* auto takesh only space necessary for its content */
+        /* grid-template-columns: 1fr 1fr 1fr auto; */
+        /* grid-template-columns: 3fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+
+        /* GRID ROW */
+        height: 500px;
+        /* grid-template-rows: 200px 300px; */
+        /* grid-template-rows: 1fr 300px; */
+        /* grid-template-rows: 1fr auto; */
+        grid-template-rows: 1fr 1fr;
+
+        /* GRID GAP */
         /* gap: 30px;  */
-        column-gap: 30px;
-        row-gap: 70px;
+        column-gap: 10px;
+        row-gap: 30px;
       }
 
       .container--2 {
