@@ -47,4 +47,16 @@ Section Components:
   - Cover the image: `background-size: cover`
 - App Layout:
   - Design logic using Grid
-    - Scroll bar: `overflow: scroll`, `flex-shrink: 0` (Reset flex shrink)
+  - Scroll bar: `overflow: scroll`, `flex-shrink: 0` (Reset flex shrink)
+
+Omnifood:
+
+- Website building process
+- Define, Plan and Sketch
+- Define CSS Design System: Typography, colors, spaces, etc
+- max-width, rem
+- Build 'Hero' section
+- Build Navigation
+- Build 'How to' section
+  - Reusable grid & centered container classes
+  - Pseudo elements (before, after) to add circles behind the image
