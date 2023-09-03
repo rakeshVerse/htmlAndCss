@@ -1,3 +1,6 @@
+// Set current year
+const yearEl = document.querySelector(".year");
+yearEl.textContent = new Date().getFullYear();
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
