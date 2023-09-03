@@ -1,6 +1,17 @@
+// MOBILE NAVIGATION
+
+const headerEl = document.querySelector(".header");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+btnNavEl.addEventListener("click", function (e) {
+  headerEl.classList.toggle("nav-open");
+});
+
+///////////////////////////////////////////////////////////
+
 // Set current year
 const yearEl = document.querySelector(".year");
 yearEl.textContent = new Date().getFullYear();
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
