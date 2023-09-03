@@ -72,6 +72,9 @@ html {
 
   /* Hide content that overflows on X asix (Mobile navigation) */
   overflow-x: hidden;
+
+  /* Doesn't work on safari */
+  /* scroll-behavior: smooth; */
 }
 
 body {
