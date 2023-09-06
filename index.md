@@ -1,6 +1,6 @@
 ## Contents
 
-Layouts:
+Layouts
 
 - Floats:
   - Float left, float right
@@ -25,7 +25,7 @@ Layouts:
 
 Design: Typography, Images, Icons, Shadows, Border radius, Colors, Spacing
 
-Components:
+Components
 
 - Accordion:
   - Use `flex-direction: column` instead of `margin-bottom` to create vertical gaps between elements
@@ -38,7 +38,7 @@ Components:
 - Table
 - Pagination
 
-Section Components:
+Section Components
 
 - Hero Section:
   - Design logic
@@ -49,14 +49,44 @@ Section Components:
   - Design logic using Grid
   - Scroll bar: `overflow: scroll`, `flex-shrink: 0` (Reset flex shrink)
 
-Omnifood:
+Website building principles
 
 - Website building process
 - Define, Plan and Sketch
 - Define CSS Design System: Typography, colors, spaces, etc
-- max-width, rem
+- Visual hierarchy: Space (distance between components), font-size, font-colors (tints & shades)
+- Responsive desing:
+  - flexible Grids unit `fr`
+  - flexible images unit `%`
+  - avoid horizontal scrolling using `max-width`
+  - flexible fonts and spacing unit `rem` (1rem = 16px)
+
+Omnifood
+
 - Build 'Hero' section
 - Build Navigation
 - Build 'How to' section
   - Reusable grid & centered container classes
   - Pseudo elements (before, after) to add circles behind the image
+- Build Meals section
+  - Hide overflowing content: `overflow-hidden`
+  - Animation (move element up on hover): `transform: translateY(-1.2rem);`
+- Build testimonial + gallery section
+  - Animation (scale element on hover): `transform: scale(1.2)`
+- Build pricing section
+  - Animation (rotate element): `transform: rotate(45deg)`
+  - Multiple grids inside an element, Add margin to above grids but not the last grid `.grid:not(:last-child) { margin-bottom: 9.6rem; }`
+- Build CTA section: Gradient, image overlay, form
+- Build footer
+
+Responsive Design (Desktop first approach)
+
+- `@media (max-width: 600px){}` - Apply styles maximum upto `600px` only not after that
+- rem and em does not depend on html font-size in media queries. Instead, 1rem = 1em = 16px
+- Using `em` for media queries, e.g. media query for 1344px (1344 / 16 = 84em) will be `@media (max-width: 84em){}`
+- To reduce _font-size_ set `rem` to less than 10px e.g. to set `1rem` to `9px` for Tablets `9px/16px = 0.5625px = 56.25%`, so the _font-size_ will be `html { font-size: 56.25%; }`. Now, `20rem` will be `180px` not `200px`
+- Mobile navigation
+  - Create navigation in CSS that covers the view port height
+  - Write CSS for show/hide navigation using `opacity`.
+  - Create a helper class that contains the CSS to show navigation
+  - Add and remove the helper class using JS
