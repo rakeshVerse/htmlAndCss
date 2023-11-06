@@ -8,33 +8,46 @@ Layouts
   - Box sizing: Alternate box model
   - Layout entire page using Floats
 - Flexbox:
-  - flex container, flex items, Main Axis, Cross Axis
-  - Flex container: align-items, justify-content, gap
-  - Flex items: align-self, order
-  - Flex property: flex-grow, flex-shrink, flex-basis, shorthand(flex: grow, shrink, basis)
+  - Flex container, flex items, Main Axis, Cross Axis
+  - Flex container for all items: align-items, justify-content, gap
+  - Flex items for individual items: align-self, order
+  - Flex property: flex-grow, flex-shrink, flex-basis, shorthand(flex: grow, shrink, basis). [These properties specifies columns width and its content behaviour. `grow` lets the column grow, `shrink` shrinks the content for smaller devices, `basis` is similar to width which defaults to `auto`. For equal width columns set `basis` to 0 or 100%]. To apply these properties to each item use `flex-container > * {}` selector.
+  - Change flex direction: flex-direction defaults to `row`
   - Build layout using flexbox
 - Grids:
   - Grid container, grid items, column axis, row axis
   - Grid lines, grid track/columns, gird track/rows, grid cell (filled or empty), gutter/gap
-  - Grid container properties: grid-template-columns, grid-template-rows, gap, column-gap, row-gap
-  - Placing and spanning grid items: grid-column, gird-row
+  - Grid container properties: grid-template-columns, grid-template-rows, gap, column-gap, row-gap. After specifying `grid-template-columns` we don't have to specify `grid-template-rows`
+  - Placing and spanning grid items: grid-column, gird-row. For spanning across columns: `grid-coloums: span start/end`
   - Aligning grid tracks (when containter is bigger than the grid): justify-content, align-content
   - Aligning grid items inside grid cells: justify-items, align-items
   - Aligning individual grid item: justify-self, align-self
+  - Use utility classes where ever possible like `.grid-cols-2, .grid-cols-span-4, etc.`
   - Build layout using grid
 
 Design: Typography, Images, Icons, Shadows, Border radius, Colors, Spacing
 
+ChairApp:
+
+- Use `grid` for layouting
+- Use `flex` for one dimentional components
+- Use enough spacing (margin-bottom) between sections
+- For site's main heading use `h1`, for each section heading use `h2`. For sub-headings use `h3` and so on
+- Use a system for font sizes and spacing
+
 Components
 
 - Accordion:
-  - Use `flex-direction: column` instead of `margin-bottom` to create vertical gaps between elements
-  - Display grid for layouting
+  - Use `flex-direction: column` instead of `margin-bottom` to create vertical gaps between elements. This stacks accoridions vertically
+  - Display grid for layouting of each accordian (item)
   - Open state trick: use a class (e.g. open) to style an element differently
+  - Toggle open class using JS
 - Carousel:
+  - Create flex container that contains image and the text
   - Image scaling `transform: scale(value)`
-  - Removing flex item using absolute positioning
-  - Centering absolutly positioned element using `transform: tanslate(X, Y)`
+  - For controls (buttons and dots)
+    - Give `absolute positioning` to take them out of the normal flow
+    - Centering absolutly positioned element using `transform: tanslate(X, Y), top, bottom, left, right` properites
 - Table
 - Pagination
 
