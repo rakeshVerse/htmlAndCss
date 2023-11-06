@@ -145,7 +145,7 @@
           </ul>
         </div>
       </div>
-      <div class="item open">
+      <div class="item">
         <p class="number">02</p>
         <p class="text">How long do I have to return my chair?</p>
         <svg
@@ -224,5 +224,24 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // // Using Loop
+      // const itemContainer = document.querySelectorAll(".item");
+
+      // itemContainer.forEach((item) =>
+      //   item.addEventListener("click", function () {
+      //     item.classList.toggle("open");
+      //   })
+      // );
+
+      // // Using event delegation
+      const accordion = document.querySelector(".accordion");
+
+      accordion.addEventListener("click", function (e) {
+        e.target != accordion &&
+          e.target.closest(".item").classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
